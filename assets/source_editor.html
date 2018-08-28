@@ -1,0 +1,306 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Source Editor</title>
+<style>
+body{width:97%;margin:0 auto;background-color:#f1f1f1;}
+
+.xcr::-webkit-scrollbar {width:8px;}.xcr::-webkit-scrollbar-track {-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.3);-webkit-border-radius:1px;border-radius:1px;}.xcr::-webkit-scrollbar-thumb {-webkit-border-radius:1px;border-radius:1px;background:#09C;-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.5);}.xcr::-webkit-scrollbar-thumb:window-inactive {background:rgba(204,0,0,.4);border:1px solid #ccc;}* {box-sizing:border-box;}
+html{}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-5-half {width: 47.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+    border: 0px solid #ccc;
+	color:#444;
+}
+[class*="no"] {
+    float: left;
+    padding: 0;}
+[class*="padd20"]{display:block;padding:20px;}
+.row:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+.hr{border:none; clear:both; height:1px; line-height:0; width:100%; font-size:0; padding:0 ;margin-bottom :20px;background:#F39;box-shadow:0 0px 3px #fff;}
+.left {text-align:left;}
+.right {text-align:right;}
+.center {text-align:center;}
+.fleft {float:left;}
+.fright {float:right;}
+.clear {clear:both;display:block;overflow:hidden;visibility:hidden;width:0;height:0;}
+.dotted {border-bottom:1px dashed #F3C;border-left:0;border-right:0;margin-bottom:10px;}
+
+/*** Wrapper ***/
+.wrapper{background-color:#fff;box-shadow:0 0 7px #999;-webkit-box-shadow:0 0 7px #999;border-top:5px solid #F63;margin:10px auto 20px auto;}
+.fcode{border:none;padding:5px;width:100%;height:400px;scroll:auto;background:#212121;color:#f1f1f1; font-family:Courier, serif;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;}
+.fcode:hover{box-shadow:0 0 3px #006699;-moz-box-shadow:0 0 3px #006699;-webkit-box-shadow:0 0 3px #006699;}
+.frender2{min-height:900px;width:100%;background:#ffffff;}
+
+
+.default{display:block;width:30%;padding:8px 22px; text-align:left;font-size:15px;font-family:Tahoma, Geneva, sans-serif;background-color:rgba(0,0,0,0.05);cursor:pointer;border-radius:5px;-webkit-border-radius:5px;-webkit-box-shadow:inset 0 0 4px #fff,inset 0 1px 8px #999;box-shadow:inset 0 0 4px #fff,inset 0 1px 8px #999;border:1px dashed #EBEBEB;-webkit-transition:all .7s;transition:all .7s;}
+.default:focus,.default:hover{display:block;width:50%;}
+ 
+#aboutmetextarea { display: block; width: 97%;margin:5px auto 7px 2px; }
+#exampleInputFile { display: block; }
+.btn{background-color:#ff8011;color:#fff;border:1px solid #ff5c11;padding:7px 22px;text-align:center;border-radius:3px;cursor:pointer;}
+.btn:hover{background-color:#ff5c11;}
+.btnoff{color:#333;border:none;padding:7px 12px;text-align:center; outline:none; }
+.btn,.btnoff{ margin-bottom:10px}
+
+
+
+.tab #info,.tab #designer{display:none;width:100%;background-color:rgba(0,0,0,0.80);height:100%;margin:0 auto;-webkit-transition:all  2s linear;transition:all  2s linear;position:fixed;top:0;left:0;z-index:10000;}
+#info p{font-size:13px;font-family:Tahoma, Geneva, sans-serif;}
+h3{font-size:17px;color:#666;}
+.tab #info:target,.tab #designer:target{display:block;}
+#info p{font-size:13px;font-family:Tahoma, Geneva, sans-serif;}
+a:link, a:visited{color:#099;text-decoration:none;}a:hover{color:#F39;text-decoration:none;}
+.btnoff{display:blcok;width:100%;height:auto;margin:0 auto 12px auto;opacity:1;font-size:19px;background-color:transparent;text-align:left;}
+button.dinfo,button.dinfo:visited{display:block;width:30px;height:30px;background-color:#09C;color:#fff;text-align:center;-webkit-border-radius:30px;border-radius:30px;border:5px solid #F60;position:fixed;top:20px;right:10px;z-index:10000;font-family:Verdana, Geneva, sans-serif;overflow:hidden;-webkit-transition:all .3s linear;transition:all .3s linear;cursor:pointer; outline:none;}
+button.dinfo:hover{background-color:#F60;color:#fff;border:5px solid #222;width:auto;height:auto;padding:6px 15px;}
+
+button.dinfoz,button.dinfoz:visited{width:auto;height:auto;background-color:#fff;color:#555;text-align:center;-webkit-border-radius:3px;border-radius:3px;border:1px solid #ccc;font-family:Verdana, Geneva, sans-serif;overflow:hidden;-webkit-transition:all .3s linear;transition:all .3s linear;cursor:pointer; outline:none;}
+button.dinfoz:hover{background-color:#f1f1f1;color:#09C;border:1px solid #222;}
+
+
+button.close,button.close:visited{width:auto;height:auto;background-color:#09F;color:#fff;text-align:center;-webkit-border-radius:3px;border-radius:3px;border:1px solid #06C;font-family:Verdana, Geneva, sans-serif;overflow:hidden;-webkit-transition:all .3s linear;transition:all .3s linear;cursor:pointer; outline:none;padding:3px 9px 7px;}
+button.close:hover{background-color:#09C;color:#fff;border:1px solid #06C;}
+
+button.dinfozDesigner,button.dinfozDesigner:visited{width:auto;height:auto;background-color:#fff;color:#555;text-align:center;-webkit-border-radius:3px;border-radius:3px;border:0;font-family:Verdana, Geneva, sans-serif;overflow:hidden;-webkit-transition:all .3s linear;transition:all .3s linear;cursor:pointer; outline:none;}
+button.dinfozDesigner:hover{background-color:#fff;color:#09C;}
+
+.boxed{background-color:#fff;margin:2% auto 2% auto;height:auto;-webkit-border-radius:10px;border-radius:10px;}
+
+#m500,#m800,#mfull{-webkit-transition: all .4s;transition: all .4s;}
+#m500:target{display:block;width:50%;margin:0 auto;}
+#m800:target{display:block;width:80%;margin:0 auto;}
+.leo{background-color:#fff;font-family:Century Gothic, Tahoma, Geneva, sans-serif;border-bottom:1px solid #f1f1f1;}
+.leo p{display:block;width:90%;height:auto;margin:0 auto auto 4px;padding:10px;font-size:19px;color:#666;}
+.resize a,.resize a:visited{display:block;width:90%;height:auto;padding:7px 6px;background-color:#099;color:#fff;font-size:12px;text-align:center;text-decoration:none;margin:30px auto 14px auto;-webkit-border-radius:4px;border-radius:4px;}
+.resize a:hover{background-color:#09C;color:#fff;text-decoration:none;}
+.blue{background-color:#09C;border:1px solid #069;}
+.blue:hover{background-color:#069}
+
+.caramel{height:350px;overflow:auto;margin-top:20px;}
+.boxed h3,.caramel h3, .caramel p, .caramel{font-family:Century Gothic, Tahoma, Geneva, sans-serif;}
+.caramel h3{font-size:18px;} .caramel p{font-size:14px;}
+
+.micro span{opacity:0;-webkit-transition:all .3s linear;transition:all .3s linear;}
+.micro:hover span {opacity:1;}
+span.zinfo{display:block;width:90%;height:auto;font-size:13px;color:#000;font-family:Tahoma, Geneva, sans-serif;padding:3px 11px;background-color:rgba(0,153,204,0.5);border:1px solid rgba(0,153,204,0.8);-webkit-border-radius:2px;border-radius:2px;}
+span.zinfo::before{ content: " ";position:relative;bottom:25px;left:20px; margin-left: -5px;border-width: 5px;border-style: solid;border-color: transparent transparent rgba(0,153,204,1) transparent;}
+span.zinfor{display:block;font-size:13px;color:#666;font-family:Tahoma, Geneva, sans-serif;padding:3px 11px;background-color:rgba(0,153,204,0.0);border:1px solid rgba(0,153,204,0.0);-webkit-border-radius:2px;border-radius:2px;}
+.zet{display:block;width:90%;height:1px;overflow:hidden;background-color:#ccc;margin:6px auto 4px auto;}
+
+@media only screen and (max-width: 500px) {[class*="col-"] {float: left;padding: 15px;border: 0px solid #ccc;color:#444;}[class*="no"] {float: left;padding: 0;}}
+
+.clearfix:after {clear:both;content:' ';display:block;font-size:0;line-height:0;visibility:hidden;width:0;height:0;}* html .clearfix {height:1%;}
+</style>
+
+
+</head>
+<body>
+<button class="dinfo" type="button" onClick="myFunction()">? Info</button>
+
+<div id="code" class="col-12 wrapper">
+<button type="button" id="btnOpen" disabled class="btnoff">Source Editor</button>
+<textarea id="aboutmetextarea" class="frame fcode" name="code" wrap="soft" onclick="focus(this.code)" spellcheck="false">
+<p>Copy/paste your code here and click the Preview button</p>
+<p>You can also upload/import a full web page inside this editing box using the upload file function</p></textarea>
+
+<div style="col-12">
+  <div class="col-4 micro">
+        <button type="button" onclick="preview.document.write (document.getElementsByTagName ('TEXTAREA')[0].value); preview.document.close(); preview.focus()" class="btn">Preview</button>
+        <span class="zinfo">Click this button to view your edited file</span>
+    </div>
+   <div class="col-4 micro">
+     <button type="button" onclick="window.location.href=window.location.href" class="btn">Reset</button>
+     <span class="zinfo">Reset - all editing made will be lost</span>
+     </div>
+    <div class="col-4 micro">
+    <button type="button" id="btnSave" class="btn blue">Save File</button>
+    <span class="zinfo">Save the edited file (accepted format: .txt, .php, .html)</span>
+    </div>
+    <div class="col-12 no">
+    <input type="file" id="exampleInputFile" accept=".html" class="default">
+    <span class="zinfor">Upload your file (accepted format: .txt, .php, .html) - <button class="dinfoz" type="button" onClick="myFunction()">? Info</button></span>
+    </div>
+</div>
+
+
+</div>
+
+
+
+
+<div class="tab">
+
+   <div id="info">
+   <div class="col-2"></div>
+      <div class="col-8 boxed">
+        <div class="col-10 no"><h3>How to use this tool?</h3></div><div class="col-2 right no"><button type="button" class="close" onClick="myFunction()">x</button></div>
+          <div class="col-12 caramel xcr">
+                <p><strong>Source Editor</strong> - dark-grey text box where you can edit the markup code</p>
+                <p><strong>Preview button</strong> - after you are done with the editing process, click this button in order to apply the changes and view the rendered markup in the Render window</p>
+                <p><strong>Reset button</strong> - basically a refresh page function. All editing made will be lost</p>
+                <p><strong>Save File</strong> - after you are done with the editing, click the Preview button and after that, click the Save File button in order to update the file you were editing and save it on your laptop/pc</p>
+                <p><strong>Upload File</strong> - allows you to upload any web page from your laptop/pc directly into Source Editor's window</p>
+                <div class="zet">&nbsp;</div>
+                <p>When prompt to save the file, if you are editing a loaded file rename it using the same name, this way it updates itself avoiding creating a copy</p>
+                <p>Because it only shows the markup , the Editor does not load the full path of the images or any other resources like additional stylesheet via url.<br/>If you want for all resources to be loaded and rendering the full page, move this file into the main directory (folder where your to-edit file is located)</p>
+                <p>When working with full markup like Chaturbate bio designs for example, and all CSS, images and HTML is in one place, no need to move this file</p>
+                <p>Best practice in order to save the markup code as a HTML page, remember to add the header tags, body tags, document type (and related closing tags of course)</p>
+   </div>
+   </div>
+   <div class="col-2"></div>
+</div>
+
+</div>
+
+
+<div id="m800">
+<div id="m500">
+<div id="#mfull" class="col-12 no leo">
+<div id="render" class="col-9 leo"><p>Render</p></div>
+<div class="col-3 no resize right"><button onclick="my500()" class="close">Change window size - 50%</button></div>
+<iframe class="frame frender2" src="about:blank" name="preview" frameborder="0"></iframe>
+</div>
+</div>
+</div>
+
+
+<div class="col-12 wrapper center footer">
+<p><button class="dinfozDesigner" type="button" onClick="designedBy()">Source Editor tool  Developed by Dan N</button></p>
+</div>
+
+
+
+
+
+
+<div class="tab">
+
+   <div id="designer">
+   <div class="col-2"></div>
+      <div class="col-8 boxed">
+        <div class="col-10 no"><h3>About</h3></div><div class="col-2 right no"><button type="button" class="close" onClick="designedBy()">x</button></div>
+          <div class="col-12 caramel xcr">
+                <p>I'm Dan N, web designer at www.camgirl.cloud website.<br/>From time to time I offer markup codes, templates and resources for webcam performers as free downloads but some of them have dificulties in editing and customizing their template by altering the Source code. </p>
+                <p>Well, this offline Source Editor is helping you view, edit and save markup codes.</p>
+                <p>It works offline, no additional resources. All in one file - javascript, CSS, HTML and it works in your Browser. Nothing to install and secure</p>
+                <p>Your browser must support HTML5 FileRender. If you see an error message, please upgrade your browser or at least use a better one like Firefox or Chrome; (I didn't tested this with Safari)</p>
+                <p class="col-12 center">
+                   Feel free to visit my <a href="https://www.deviantart.com/cgc-dan" target="_blank">DeviantArt</a> page or contact me via email if necessary.
+                </p>
+   </div>
+   </div>
+   <div class="col-2"></div>
+</div>
+
+</div>
+
+
+
+
+
+<script>
+document.getElementById('btnOpen').onclick = function() {
+  if ('FileReader' in window) {
+    document.getElementById('exampleInputFile').click();
+  } else {
+    alert('Your browser does not support the HTML5 FileReader.');
+  }
+};
+
+document.getElementById('exampleInputFile').onchange = function(event) {
+  var fileToLoad = event.target.files[0];
+
+  if (fileToLoad) {
+    var reader = new FileReader();
+    reader.onload = function(fileLoadedEvent) {
+      var textFromFileLoaded = fileLoadedEvent.target.result;
+      document.getElementById('aboutmetextarea').value = textFromFileLoaded;
+    };
+    reader.readAsText(fileToLoad, 'UTF-8');
+  }
+};
+
+document.getElementById('btnSave').onclick = function() {
+  if ('Blob' in window) {
+    var fileName = prompt('Enter file name to save. Suggestion is to save the file with the same name as the original one and in the same folder - if applicable', 'MyFile.html');
+    if (fileName) {
+      var textToWrite = document.getElementById('aboutmetextarea').value.replace(/\n/g, '\r\n');
+      var textFileAsBlob = new Blob([textToWrite], { type: 'text/plain' });
+
+      if ('msSaveOrOpenBlob' in navigator) {
+        navigator.msSaveOrOpenBlob(textFileAsBlob, fileName);
+      } else {
+        var downloadLink = document.createElement('a');
+        downloadLink.download = fileName;
+        downloadLink.innerHTML = 'Download File';
+        if ('webkitURL' in window) {
+          // Chrome allows the link to be clicked without actually adding it to the DOM.
+          downloadLink.href = window.webkitURL.createObjectURL(textFileAsBlob);
+        } else {
+          // Firefox requires the link to be added to the DOM before it can be clicked.
+          downloadLink.href = window.URL.createObjectURL(textFileAsBlob);
+          downloadLink.onclick = destroyClickedElement;
+          downloadLink.style.display = 'none';
+          document.body.appendChild(downloadLink);
+        }
+
+        downloadLink.click();
+      }
+    }
+  } else {
+    alert('Your browser does not support the HTML5 Blob.');
+  }
+};
+
+function destroyClickedElement(event) {
+  document.body.removeChild(event.target);
+}
+</script>
+<script>
+function myFunction() {
+    var x = document.getElementById("info");
+    if (x.style.display === "block") {
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
+    }
+};
+function designedBy() {
+    var x = document.getElementById("designer");
+    if (x.style.display === "block") {
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
+    }
+}
+function my500() {
+    var x = document.getElementById("m500");
+	if (x.style.width === "100%") {
+        x.style.width = "50%";
+    } else {
+        x.style.width = "100%";
+    }
+}
+</script>
+</body>
+</html>
