@@ -1,0 +1,363 @@
+<div id="main">
+<div id="m-menu" class="mod-menu animated bounceInDown">
+<a href="#About">About</a>
+<a href="#RoomRules">Room Rules</a>
+<a href="#TipMenu">Tip Menu</a>
+<a href="#Store">Store</a>
+<a href="#Videos">Videos</a>
+<a href="#TopTippers">Top Tippers</a>
+<a href="#Club">Join My Club</a>
+</div>
+
+<div class="m_only">
+<div class="col-6"><a href="#m-menu"><i class="material-icons">menu</i></a></div>
+<div class="col-6"><a href="#"><i class="material-icons">close</i></a></div>
+</div>
+
+<div class="col-12 clte_header no" style="position: relative; left: 0px; top: 0px;">
+<img src="../city.jpg"/>
+<div class="well_header_clte"><h1>Welcome to my Page</h1></div>
+  </div>
+
+   <div class="wrapper">
+
+         <div class="col-12 clte-modprofile center">
+	            <div class="clte-modavatar"><a href="#"><img src="../C82iVgUXoAELQ66.jpg" alt="Avatar Image" class="img-circle img-responsive img-raised"></a></div>
+            </div>
+            
+            <div id="About" class="center mod-ttle"><h2 class="fet"><i class="material-icons">contacts</i> <span class="grey">More About</span> Me</h2></div>
+            
+         <div class="mod-description center">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+	                </div>
+                    
+        <div class="col-12 social center">
+           <a href="#" title="Send me direct message" id="show_message_dialog"><img src="../white_envelop.png" alt="PM Me"></a>
+  <a href="#" title="Tip Me"><img src="../white_tipme.png" alt="Offline Love"></a>
+ <a href="#" title="My Amazon" target="_blank"><img src="../white_amazon.png" alt="My Amazon"></a>
+  <a href="#" title="My Twitter" target="_blank"><img src="../white_twitter.png" alt="Twitter"></a>
+  <a href="#" title="Manyvids" target="_blank"><img src="../white_manyvids.png" alt="Manyvids"></a>
+  <a href="#" title="Instagram" target="_blank"><img src="../white_instagram.png" alt="Instagram"></a>
+        </div>
+        
+        <div class="clearfix"></div>
+        </div>
+        
+        
+        
+  <div id="RoomRules" class="wrapper_secondary">
+     <div class="center mod-ttle"><h2 class="fet"><i class="material-icons">list</i> <span class="grey">My Room</span> Rules</h2></div>
+        <div class="mod-text center">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+	                </div>
+  </div>     
+  
+  
+  
+  <div id="TipMenu" class="wrapper_secondary">
+     <div class="center mod-ttle"><h2 class="fet"><i class="material-icons">speaker_notes</i> <span class="grey">My Tip</span> Menu</h2></div>
+        <div id="tiptable" class="mod-text center xcr padd">
+ 
+
+
+  <div class="col-12 padfix">
+    <div class="treq">Add tip request here</div>
+    <div class="tbutt"><a href="#">500 tokens</a></div>
+  </div>
+
+  <div class="col-12 padfix">
+    <div class="treq">Add tip request here</div>
+    <div class="tbutt"><a href="#">500 tokens</a></div>
+  </div>
+   
+<div class="col-12 padfix">
+    <div class="treq">Add tip request here</div>
+    <div class="tbutt"><a href="#">500 tokens</a></div>
+  </div>
+<div class="col-12 padfix">
+    <div class="treq">Add tip request here</div>
+    <div class="tbutt"><a href="#">500 tokens</a></div>
+  </div>
+<div class="col-12 padfix">
+    <div class="treq">Add tip request here</div>
+    <div class="tbutt"><a href="#">500 tokens</a></div>
+  </div>
+<div class="col-12 padfix">
+    <div class="treq">Add tip request here</div>
+    <div class="tbutt"><a href="#">500 tokens</a></div>
+  </div>
+<div class="col-12 padfix">
+    <div class="treq">Add tip request here</div>
+    <div class="tbutt"><a href="#">500 tokens</a></div>
+  </div>
+<div class="col-12 padfix">
+    <div class="treq">Add tip request here</div>
+    <div class="tbutt"><a href="#">500 tokens</a></div>
+  </div>
+<div class="col-12 padfix">
+    <div class="treq">Add tip request here</div>
+    <div class="tbutt"><a href="#">500 tokens</a></div>
+  </div>
+<div class="col-12 padfix">
+    <div class="treq">Add tip request here</div>
+    <div class="tbutt"><a href="#">500 tokens</a></div>
+  </div>
+
+	                </div>
+  </div>    
+        
+        
+        
+        
+   <div id="Store" class="wrapper_secondary">
+     <div class="center mod-ttle"><h2 class="fet"><i class="material-icons">shopping_cart</i> <span class="grey">My Store</span> Section</h2></div>
+        
+      <div class="mod-store center xcr">  
+      
+        <div class="pan-wrapper">
+   <div class="pan-header">Item Name</div>
+     <div class="pan-body">
+      <div class="responsive"><img src="../pic11.jpg" alt="Item Image"/></div>
+      <p>Some Text here</p>
+     </div>
+   <div class="pan-footer button"><a href="#">700 tokens</a></div>
+</div>
+
+<div class="pan-wrapper">
+   <div class="pan-header">Item Name</div>
+     <div class="pan-body">
+      <div class="responsive"><img src="../pic11.jpg" alt="Item Image"/></div>
+      <p>Some Text here</p>
+     </div>
+   <div class="pan-footer button"><a href="#">700 tokens</a></div>
+</div>
+
+<div class="pan-wrapper">
+   <div class="pan-header">Item Name</div>
+     <div class="pan-body">
+      <div class="responsive"><img src="../pic11.jpg" alt="Item Image"/></div>
+      <p>Some Text here</p>
+     </div>
+   <div class="pan-footer button"><a href="#">700 tokens</a></div>
+</div>
+        
+ <div class="pan-wrapper">
+   <div class="pan-header">Item Name</div>
+     <div class="pan-body">
+      <div class="responsive"><img src="../pic11.jpg" alt="Item Image"/></div>
+      <p>Some Text here</p>
+     </div>
+   <div class="pan-footer button"><a href="#">700 tokens</a></div>
+</div>
+
+<div class="pan-wrapper">
+   <div class="pan-header">Item Name</div>
+     <div class="pan-body">
+      <div class="responsive"><img src="../pic11.jpg" alt="Item Image"/></div>
+      <p>Some Text here</p>
+     </div>
+   <div class="pan-footer button"><a href="#">700 tokens</a></div>
+</div>
+
+<div class="pan-wrapper">
+   <div class="pan-header">Item Name</div>
+     <div class="pan-body">
+      <div class="responsive"><img src="../pic11.jpg" alt="Item Image"/></div>
+      <p>Some Text here</p>
+     </div>
+   <div class="pan-footer button"><a href="#">700 tokens</a></div>
+</div>
+        
+ <div class="clearfix"></div>
+          
+ </div> </div> 
+ 
+ 
+ 
+ 
+ 
+ <div id="Videos" class="wrapper_secondary">
+     <div class="center mod-ttle"><h2 class="fet"><i class="material-icons">videocam</i> <span class="grey">My Recorded</span> Videos</h2></div>
+        
+      <div class="mod-store center xcr">  
+      
+        <div class="pan-wrapper">
+   <div class="pan-header">Video Name</div>
+     <div class="pan-body">
+      <div class="responsive"><img src="../pic12.jpg" alt="Video Image"/></div>
+      <p>Some Text here</p>
+     </div>
+   <div class="pan-footer button"><div class="col-8"><a href="#">700 tokens</a></div><div class="col-4"><span>4:33</span></div></div>
+</div>
+
+<div class="pan-wrapper">
+   <div class="pan-header">Video Name</div>
+     <div class="pan-body">
+      <div class="responsive"><img src="../pic10.jpg" alt="Video Image"/></div>
+      <p>Some Text here</p>
+     </div>
+   <div class="pan-footer button"><div class="col-8"><a href="#">700 tokens</a></div><div class="col-4"><span>4:33</span></div></div>
+</div>
+
+<div class="pan-wrapper">
+   <div class="pan-header">Video Name</div>
+     <div class="pan-body">
+      <div class="responsive"><img src="../pic05.jpg" alt="Video Image"/></div>
+      <p>Some Text here</p>
+     </div>
+   <div class="pan-footer button"><div class="col-8"><a href="#">700 tokens</a></div><div class="col-4"><span>4:33</span></div></div>
+</div>
+        
+ <div class="pan-wrapper">
+   <div class="pan-header">Video Name</div>
+     <div class="pan-body">
+      <div class="responsive"><img src="../pic01.jpg" alt="Video Image"/></div>
+      <p>Some Text here</p>
+     </div>
+   <div class="pan-footer button"><div class="col-8"><a href="#">700 tokens</a></div><div class="col-4"><span>4:33</span></div></div>
+</div>
+
+<div class="pan-wrapper">
+   <div class="pan-header">Video Name</div>
+     <div class="pan-body">
+      <div class="responsive"><img src="../pic08.jpg" alt="Video Image"/></div>
+      <p>Some Text here</p>
+     </div>
+   <div class="pan-footer button"><div class="col-8"><a href="#">700 tokens</a></div><div class="col-4"><span>4:33</span></div></div>
+</div>
+
+<div class="pan-wrapper">
+   <div class="pan-header">Video Name</div>
+     <div class="pan-body">
+      <div class="responsive"><img src="../pic09.jpg" alt="Video Image"/></div>
+      <p>Some Text here</p>
+     </div>
+   <div class="pan-footer button"><div class="col-8"><a href="#">700 tokens</a></div><div class="col-4"><span>4:33</span></div></div>
+</div>
+        
+ <div class="clearfix"></div>
+          
+ </div> </div>         
+      
+     
+ <div id="TopTippers" class="wrapper_secondary">
+     <div class="center mod-ttle"><h2 class="fet"><i class="material-icons">supervisor_account</i> <span class="grey">My Top</span> Tippers</h2></div>
+        <div class="mod-ttpers center">
+        
+          <div class="tipper_wrapper col-m-12">
+            <div class="tipp-hder">
+            <i class="material-icons">favorite</i>
+            <span>BASIC</span>
+            </div>
+            <div class="tipp_listed xcr basics">
+              <p><i class="material-icons">thumb_up</i> Premium Username</p>
+              <p><i class="material-icons">thumb_up</i> Premium Username</p>
+              <p><i class="material-icons">thumb_up</i> Premium Username</p>
+              <p><i class="material-icons">thumb_up</i> Premium Username</p>
+              <p><i class="material-icons">thumb_up</i> Premium Username</p>
+              <p><i class="material-icons">thumb_up</i> Premium Username</p>
+            </div>
+            <div class="pan-footer tipp_go button"><a href="#">JOIN NOW <i class="material-icons">keyboard_arrow_right</i></a></div>
+          </div>
+          
+          
+          <div class="tipper_wrapper shdow col-m-12">
+            <div class="tipp-hder">
+            <i class="material-icons">stars</i>
+             <span>PREMIUM</span>
+            </div>
+            <div class="tipp_listed xcr premiums prefered">
+              <p><i class="material-icons">thumb_up</i> Premium Username</p>
+              <p><i class="material-icons">thumb_up</i> Premium Username</p>
+              <p><i class="material-icons">thumb_up</i> Premium Username</p>
+              <p><i class="material-icons">thumb_up</i> Premium Username</p>
+              <p><i class="material-icons">thumb_up</i> Premium Username</p>
+              <p><i class="material-icons">thumb_up</i> Premium Username</p>
+              <p><i class="material-icons">thumb_up</i> Premium Username</p>
+              <p><i class="material-icons">thumb_up</i> Premium Username</p>
+              <p><i class="material-icons">thumb_up</i> Premium Username</p>
+            </div>
+            <div class="pan-footer tipp_go button"><a href="#">JOIN NOW <i class="material-icons">keyboard_arrow_right</i></a></div>
+          </div>
+          
+          
+          <div class="tipper_wrapper col-m-12">
+            <div class="tipp-hder">
+            <i class="material-icons">person_pin</i>
+            <span>GOLD</span>
+            </div>
+            <div class="tipp_listed xcr goldish">
+              <p><i class="material-icons">thumb_up</i> Premium Username</p>
+              <p><i class="material-icons">thumb_up</i> Premium Username</p>
+              <p><i class="material-icons">thumb_up</i> Premium Username</p>
+              <p><i class="material-icons">thumb_up</i> Premium Username</p>
+              <p><i class="material-icons">thumb_up</i> Premium Username</p>
+              <p><i class="material-icons">thumb_up</i> Premium Username</p>
+            </div>
+            <div class="pan-footer tipp_go button"><a href="#">JOIN NOW <i class="material-icons">keyboard_arrow_right</i></a></div>
+          </div>
+          
+          <div class="col-12 tailored">
+           <div class="center mod-ttle"><h2 class="fet"><i class="material-icons">spa</i> <span class="grey">Join the</span> Wall of <span class="grey">Fame</span></h2></div>
+           <div class="mod-store center"><p>Add some informative text here</p></div>
+          </div>
+          
+          <div class="col-12 center">      
+ <div class="col-12 center start"><a href="#"><i class="material-icons">check</i>  TAKE ADVANTAGE NOW AND JOIN THE WALL of FAME</a></div>
+ </div>
+          
+          <div class="clearfix"></div>
+	 </div>
+  </div>    
+     
+ 
+ <div id="Club" class="wrapper_secondary">
+     <div class="center mod-ttle"><h2 class="fet"><i class="material-icons">school</i> <span class="grey">Join My</span> Club</h2></div>
+        
+      <div class="mod-store center xcr">  
+      
+        <div class="col-12 services no">
+        <div class="col-4 service">
+        <i class="material-icons">whatshot</i>
+        <p>HOT</p>
+        <span>MY FOLLOWERS</span>
+        </div>
+   <div class="col-8 servinfo xcr"><p>Add some text here. The template is using Material Icons - iconic font</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p></div>
+</div>
+
+<div class="col-12 services no">
+<div class="col-4 service">
+<i class="material-icons">visibility</i>
+<p>WOW</p>
+<span>THE WOW EFFECT</span>
+</div>
+   <div class="col-8 servinfo xcr"><p>Add some text here. The template is using Material Icons - iconic font</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p></div>
+</div>
+
+<div class="col-12 services no">
+<div class="col-4 service">
+<i class="material-icons">monetization_on</i>
+<p>SPONSORS</p>
+<span>MY LOVELEY SPONSORS</span>
+</div>
+   <div class="col-8 servinfo xcr"><p>Add some text here. The template is using Material Icons - iconic font</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p></div>
+</div>
+        
+  <div class="col-12 center">      
+ <div class="col-12 center start"><a href="#"><i class="material-icons">folder_shared</i>  JOIN MY CLUB - BE AWESOME</a></div>
+ </div>
+        
+ <div class="clearfix"></div>
+          
+ </div> </div>        
+        
+<div class="col-12 center camgirlbioliveeditor round-fix">
+<a href="https://camgirl.cloud/"><img src="../ltemplate-editor.png"/></a>
+  </div>
+</div>
