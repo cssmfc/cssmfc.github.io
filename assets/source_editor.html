@@ -48,11 +48,12 @@ html{}
 
 /*** Wrapper ***/
 .beta{display:block;width:100px;height:auto;padding:3px 8px;font-size:10px;
-color:#fff;text-align:center;position:absolute;top:2px;left:5px;background-color:#09C;-webkit-border-radius:3px;border-radius:3px;}
-	.beta a,.beta a:visited{color:#fff;text-decoration:none;}
+color:#fff;text-align:center;position:absolute;top:2px;left:5px;background-color:#09C;
+	-webkit-border-radius:3px;border-radius:3px;overflow:hidden;}
+	.beta a,.beta a:visited{display:block;width:100%;height:auto;margin:0 auto;color:#fff;text-decoration:none;}
 	.beta:hover{background-color:#069;color:#fff;}
-	.beta a:hover{color:#fff;text-decoration:none;}	
-	.margindown{margin-top:40px;}	
+	.beta a:hover{display:block;width:100%;height:auto;margin:0 auto;color:#fff;text-decoration:none;}	
+		
 .wrapper{background-color:#fff;box-shadow:0 0 7px #999;-webkit-box-shadow:0 0 7px #999;border-top:5px solid #F63;margin:10px auto 20px auto;}
 .fcode{border:none;padding:5px;width:100%;height:400px;scroll:auto;background:#212121;color:#f1f1f1; font-family:Courier, serif;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;}
 .fcode:hover{box-shadow:0 0 3px #006699;-moz-box-shadow:0 0 3px #006699;-webkit-box-shadow:0 0 3px #006699;}
@@ -113,7 +114,7 @@ span.zinfo{display:block;width:90%;height:auto;font-size:13px;color:#000;font-fa
 span.zinfo::before{ content: " ";position:relative;bottom:25px;left:20px; margin-left: -5px;border-width: 5px;border-style: solid;border-color: transparent transparent rgba(0,153,204,1) transparent;}
 span.zinfor{display:block;font-size:13px;color:#666;font-family:Tahoma, Geneva, sans-serif;padding:3px 11px;background-color:rgba(0,153,204,0.0);border:1px solid rgba(0,153,204,0.0);-webkit-border-radius:2px;border-radius:2px;}
 .zet{display:block;width:90%;height:1px;overflow:hidden;background-color:#ccc;margin:6px auto 4px auto;}
-
+.margindown{margin-top:40px;}
 @media only screen and (max-width: 500px) {[class*="col-"] {float: left;padding: 15px;border: 0px solid #ccc;color:#444;}[class*="no"] {float: left;padding: 0;}}
 
 .clearfix:after {clear:both;content:' ';display:block;font-size:0;line-height:0;visibility:hidden;width:0;height:0;}* html .clearfix {height:1%;}
@@ -122,7 +123,11 @@ span.zinfor{display:block;font-size:13px;color:#666;font-family:Tahoma, Geneva, 
 
 </head>
 <body>
-	<div class="beta"><a href="https://github.com/cssmfc/obs/tree/master/source_editor_tool" target="_blank">BETA</a> v1.0.E</div>
+	
+	<div class="beta">
+		<a href="https://github.com/cssmfc/obs/tree/master/source_editor_tool" target="_blank">BETA v1.0.E</a>
+	</div>
+	
 <button class="dinfo" type="button" onClick="myFunction()">? Info</button>
 
 <div id="code" class="col-12 wrapper margindown">
