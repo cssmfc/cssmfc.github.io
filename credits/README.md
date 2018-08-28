@@ -4,7 +4,7 @@
 
 Dan N  | Dellany
 ------------ | -------------
-![Dan N](https://octodex.github.com/images/yaktocat.png) | ![Dellany](https://octodex.github.com/images/yaktocat.png)
+![Dan N](https://raw.githubusercontent.com/cssmfc/cssmfc.github.io/master/credits/dan/author.png) | ![Dellany](https://raw.githubusercontent.com/cssmfc/cssmfc.github.io/master/credits/dellany/author4.png)
 graphic and web designer | former camgirl, consultant, graphic designer
 
 
