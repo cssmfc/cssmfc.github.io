@@ -47,7 +47,12 @@ html{}
 .dotted {border-bottom:1px dashed #F3C;border-left:0;border-right:0;margin-bottom:10px;}
 
 /*** Wrapper ***/
-	.beta{display:block;width:120px;height:auto;padding:3px 8px;font-size:11px;color:#fff;text-align:center;position:absolute;top:2px;left:2px;background-color:#222;border-radius:3px;}
+.beta{display:block;width:100px;height:auto;padding:3px 8px;font-size:11px;
+color:#fff;text-align:center;position:absolute;top:2px;left:2px;background-color:#09C;-webkit-border-radius:3px;border-radius:3px;}
+	.beta a,.beta a:visited{color:#fff;text-decoration:none;}
+	.beta:hover{background-color:#069;color:#fff;}
+	.beta a:hover{color:#fff;text-decoration:none;}	
+	.margindown{margin-top:40px;}	
 .wrapper{background-color:#fff;box-shadow:0 0 7px #999;-webkit-box-shadow:0 0 7px #999;border-top:5px solid #F63;margin:10px auto 20px auto;}
 .fcode{border:none;padding:5px;width:100%;height:400px;scroll:auto;background:#212121;color:#f1f1f1; font-family:Courier, serif;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;}
 .fcode:hover{box-shadow:0 0 3px #006699;-moz-box-shadow:0 0 3px #006699;-webkit-box-shadow:0 0 3px #006699;}
@@ -117,10 +122,10 @@ span.zinfor{display:block;font-size:13px;color:#666;font-family:Tahoma, Geneva, 
 
 </head>
 <body>
-	<div class="beta">BETA</div>
+	<div class="beta"><a href="https://github.com/cssmfc/obs/tree/master/source_editor_tool" target="_blank">BETA</a> v1.0.E</div>
 <button class="dinfo" type="button" onClick="myFunction()">? Info</button>
 
-<div id="code" class="col-12 wrapper">
+<div id="code" class="col-12 wrapper margindown">
 <button type="button" id="btnOpen" disabled class="btnoff">Source Editor</button>
 <textarea id="aboutmetextarea" class="frame fcode" name="code" wrap="soft" onclick="focus(this.code)" spellcheck="false">
 <p>Copy/paste your code here and click the Preview button</p>
