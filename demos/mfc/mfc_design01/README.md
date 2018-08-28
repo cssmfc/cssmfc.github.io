@@ -28,6 +28,7 @@ This section is hosting free demos and resources currently available on [Dan's V
 ### Generic install
 All MyFreeCams templates come with CSS and HTML markup codes. 
 Both of them must be installed on MFC platform in order to render the full design.
+
 **HTML Install**
 * open the HTML markup code in your favorite HTML or plain text editor (Notepad++, TextWrangler, [Source Editor](https://github.com/cssmfc/obs/tree/master/source_editor_tool) )
 * upload the graphic elements (images) online and replace the default ones
