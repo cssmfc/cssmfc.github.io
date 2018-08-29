@@ -9,13 +9,9 @@
 * {-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;}
 /*** makes text elements clear ***/
 body{width:100%;margin:50px auto;font-family: 'Raleway', sans-serif;background-color:#f1f1f1;}
-
 .xcr::-webkit-scrollbar{width: 8px;}.xcr::-webkit-scrollbar-track{-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.3);-webkit-border-radius:10px;border-radius:10px;}.xcr::-webkit-scrollbar-thumb{-webkit-border-radius:10px; border-radius:10px;background: #333;-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.5);}.xcr::-webkit-scrollbar-thumb:window-inactive{background: rgba(204,0,0,.4);border:1px solid #900;}
-
 * {box-sizing: border-box;}.line::after {content: "";clear: both;display: inline-table;}[class*="cgc-"] {float: left;padding: 15px;border: 1px solid rgba(0,0,0,0.0);}.cgc-1 {width: 8.33%;}.cgc-2 {width: 16.66%;}.cgc-3 {width: 25%;}.cgc-4 {width: 33.33%;}.cgc-5 {width: 41.66%;}.cgc-6 {width: 50%;}.cgc-7 {width: 58.33%;}.cgc-8 {width: 66.66%;}.cgc-9 {width: 75%;}.cgc-10 {width: 83.33%;}.cgc-11 {width: 91.66%;}.cgc-12 {width: 100%;}.no{padding:0;}.tleft {text-align:left;}.tright {text-align:right;}.tcenter {text-align:center;}.tfleft {float:left;}.tfright {float:right;}.imgresp img, img.imgresp{display:block;width:100%;height:auto;margin:0 auto;}
 /*** reset and responsive elements ***/
-
-
 /*** Wrapper - main content ***/
 a:link,a:visited{color:#09C;}a:hover {color:#F39;}
 #main{}
@@ -25,44 +21,66 @@ p{line-height:20px;}
 .wrapper{background-color:#fff;}
 .clmenu ul {display:block;width:100%;height:auto;list-style-type: none;margin: 0;padding: 0;overflow: hidden;background-color: #333;position:fixed;top:0;left:0;z-index:9999;}.clmenu li {float: left;}.clmenu li a {display: block;color:#FFF;text-align: center;padding: 14px 16px;text-decoration: none;}.clmenu li a:hover:not(.active) {color:#ffffff;box-shadow:4px 7px 5px -4px #000;background-color:#09C;}.clmenu .active {background-color:#09C;color:#ffffff;}.clmenu .active:hover{color:#ffffff;background-color:#069;}.clmenu .flright{float:right;color:#ffffff;}
 #about p{display:block;width:80%;height:auto;margin:0 auto;padding:20px;text-align:center;font-size:17px;}
-
 .caramel{height:350px;overflow:auto;margin-top:20px;}
 .boxed h3,.caramel h3, .caramel p, .caramel{}
 .caramel h3{font-size:18px;} .caramel p{font-size:14px;}
-
 button.close,button.close:visited{width:auto;height:auto;background-color:#09F;color:#fff;text-align:center;-webkit-border-radius:3px;border-radius:3px;border:1px solid #06C;font-family:Verdana, Geneva, sans-serif;overflow:hidden;-webkit-transition:all .3s linear;transition:all .3s linear;cursor:pointer; outline:none;padding:3px 9px 7px;}
 button.close:hover{background-color:#09C;color:#fff;border:1px solid #06C;}
-
 button.dinfozDesigner,button.dinfozDesigner:visited{width:auto;height:auto;background-color:#fff;color:#555;text-align:center;-webkit-border-radius:3px;border-radius:3px;border:0;font-family:Verdana, Geneva, sans-serif;overflow:hidden;-webkit-transition:all .3s linear;transition:all .3s linear;cursor:pointer; outline:none;}
 button.dinfozDesigner:hover{background-color:#fff;color:#09C;}
-
 .boxed{background-color:#fff;margin:2% auto 2% auto;height:auto;-webkit-border-radius:10px;border-radius:10px;}
-
 .tab #designer{display:none;width:100%;background-color:rgba(0,0,0,0.80);height:100%;margin:0 auto;-webkit-transition:all  2s linear;transition:all  2s linear;position:fixed;top:0;left:0;z-index:10000;}
-
 h3{font-size:17px;color:#666;}
 .tab #designer:target{display:block;}
-
 .obscontainer{background-color:#fff;border-left:5px solid #444;-webkit-box-shadow:3px 4px 7px #999;box-shadow:3px 4px 7px #999;margin:20px auto 21px auto;}
 .mfccontainer{background-color:#fff;border-left:5px solid #093;-webkit-box-shadow:3px 4px 7px #999;box-shadow:3px 4px 7px #999;margin:20px auto 21px auto;}
 .cbcontainer{background-color:#fff;border-left:5px solid #F60;-webkit-box-shadow:3px 4px 7px #999;box-shadow:3px 4px 7px #999;margin:20px auto 21px auto;}
 .gfcontainer{background-color:#fff;border-left:5px solid #F36;-webkit-box-shadow:3px 4px 7px #999;box-shadow:3px 4px 7px #999;margin:20px auto 21px auto;}
 .description{font-size:17px;color:#666;}
-
 .footer{background-color:#222;}
 .footer h3{display:block;width:90%;height:auto;margin:0 auto;font-size:19px;color:#999;border-bottom:1px solid #666;}
 ul.social,.social li{list-style:none;}
 .social li a{display:block;color: #555;text-align:left;padding: 4px 5px;text-decoration: none;font-size:14px;}
 .social li a:hover{display:block;color:#39C;text-align:left;padding: 4px 5px;text-decoration: none;font-size:14px;}
 .credits p{font-size:12px;color:#888;}
-
 .btn a,.btn a:visited{padding:8px 13px;text-align:center;background-color:#09C;color:#f1f1f1;border:1px solid #069;-webkit-border-radius:5px;border-radius:5px;}
 .btn a:hover{padding:8px 13px;text-align:center;background-color:#069;color:#fff;border:1px solid #069;}
+.teamcontainer{background-color: transparent;margin:20px auto 21px auto;}
+.led{background-color:#fff;-webkit-box-shadow: 0 0 7px #999;box-shadow:  0 0 7px #999;margin:0 auto 11px auto;}
 
-@media only screen and (max-width: 728px){body{margin-top:110px;font-size:13px;color:#666;font-family:Verdana, Geneva, Camgirl Live Editor, sans-serif;}#main{margin-top:145px;}[class*="cgc-"]{width:100%;}.clmenu ul {list-style-type: none;margin: 0;padding: 0;overflow: hidden;background-color: #333;}.clmenu li {float: none;clear:left}.clmenu li a {display: block;color: white;text-align: center;padding: 14px 16px;text-decoration: none;}.clmenu li a:hover:not(.active) {background-color: #111;}.clmenu .active {background-color:#96C}.clmenu .active:hover{background-color:#96C;}.clmenu .flright{float:none;clear:right}.btn a,.btn a:visited{display:block;width:80%;height:auto;margin:10px auto 12px auto;padding:6px 11px;font-size:14px;text-align:center;background-color:#09C;color:#f1f1f1;border:1px solid #069;-webkit-border-radius:5px;border-radius:5px;}
+
+.round{background-color:#fff;-webkit-border-radius:50px;border-radius:50px;margin:-5px auto 10px auto;-webkit-box-shadow:inset 0 0 40px #036;box-shadow:inset 0 0 40px #036;overflow:hidden;}.round div{line-height:normal;}
+
+.obsbtn a,.obsbtn a:visited{display:block;width:100%;height:auto;background-color:#09F;color:#fff;text-decoration:none;padding:10px 7px 11px;text-align:center;}
+.obsbtn a:hover{display:block;width:100%;height:auto;background-color:#069;color:#fff;text-decoration:none;padding:10px 7px 11px;text-align:center;-webkit-box-shadow:inset 3px 11px 22px #036;box-shadow:inset 3px 11px 22px #036;}
+
+
+
+
+.mfcbtn a,.mfcbtn a:visited{display:block;width:100%;height:auto;background-color:#4aa33e;color:#fff;text-decoration:none;padding:10px 7px 11px;text-align:center;}
+.mfcbtn a:hover{display:block;width:100%;height:auto;background-color:#457c3d;color:#fff;text-decoration:none;padding:10px 7px 11px;text-align:center;-webkit-box-shadow:inset 3px 11px 22px #466342;box-shadow:inset 3px 11px 22px #466342;}
+
+
+.cbbtn a,.cbbtn a:visited{display:block;width:100%;height:auto;background-color:#ffa23f;color:#fff;text-decoration:none;padding:10px 7px 11px;text-align:center;}
+.cbbtn a:hover{display:block;width:100%;height:auto;background-color:#ff7a1c;color:#fff;text-decoration:none;padding:10px 7px 11px;text-align:center;-webkit-box-shadow:inset 3px 11px 22px #db6613;box-shadow:inset 3px 11px 22px #db6613;}
+
+.psdbtn a,.psdbtn a:visited{display:block;width:100%;height:auto;background-color:#bd19ff;color:#fff;text-decoration:none;padding:10px 7px 11px;text-align:center;}
+.psdbtn a:hover{display:block;width:100%;height:auto;background-color:#e248aa;color:#fff;text-decoration:none;padding:10px 7px 11px;text-align:center;-webkit-box-shadow:inset 3px 11px 22px #db1384;box-shadow:inset 3px 11px 22px #db1384;}
+
+.clmenu li a span{display:inline-block;width:auto;font-size:10px;margin:-28px 3px auto 9px;vertical-align:super;position:relative;background-color:#09C;padding:2px 6px;text-shadow:0 0 3 #000;top:-3px;-webkit-border-radius:2px;border-radius:2px;}
+.clmenu li a:hover span{display:inline-block;width:auto;font-size:10px;margin:-28px 3px auto 9px;vertical-align:super;position:relative;background-color:#222;padding:2px 6px;text-shadow:0 0 3 #000;top:-3px;-webkit-border-radius:2px;border-radius:2px;}
+.sr-only,.sr-onlyshow{display:none;}
+
+@media only screen and (max-width: 728px){body{margin-top:110px;font-size:13px;color:#666;font-family:Verdana, Geneva, Camgirl Live Editor, sans-serif;}#main{margin-top:15px;}[class*="cgc-"]{width:100%;}.clmenu ul {list-style-type: none;margin: 0;padding: 0;overflow: hidden;background-color: #333;}.clmenu li {float: none;clear:left}.clmenu li a {display: block;color: white;text-align: center;padding: 14px 16px;text-decoration: none;}.clmenu li a:hover:not(.active) {background-color: #111;}.clmenu .active {background-color:#96C}.clmenu .active:hover{background-color:#96C;}.clmenu .flright{float:none;clear:right}.btn a,.btn a:visited{display:block;width:80%;height:auto;margin:10px auto 12px auto;padding:6px 11px;font-size:14px;text-align:center;background-color:#09C;color:#f1f1f1;border:1px solid #069;-webkit-border-radius:5px;border-radius:5px;}
 .btn a:hover{display:block;width:80%;height:auto;margin:10px auto 12px auto;padding:6px 11px;font-size:14px;text-align:center;background-color:#069;color:#fff;border:1px solid #069;}h1, h2, h3, h4, h5, h6 {font-family: Tahoma, Geneva, sans-serif;color:#666; font-size:15px;}#about, #about p, .wrapper, .wrapper p, p, .description, .description p{color:#333;font-size:14px;}.caramel{height:250px;overflow:auto;margin-top:10px;}
 .boxed h3,.caramel h3, .caramel p, .caramel{font-size:15px;}
 .caramel h3{font-size:15px;} .caramel p{font-size:12px;}p{line-height:20px;font-size:13px;}
+.sr-only{display:block;text-align:left;font-size:11px;}
+.sr-only,.sr-only a,.sr-only a:visited{text-align:left!important;} .sr-only a:hover{text-align:left;}.sr-only a::before{content:'\2715';display:inline-block;width:30px;height:auto;margin-left:-2px;}
+
+
+.sr-onlyshow{display:block; width:100%;height:auto;text-align:left;font-size:11px;background-color:#222;position:fixed;top:0;left:0;}
+.sr-onlyshow,.sr-onlyshow a,.sr-onlyshow a:visited{padding:8px 12px;text-align:left!important;color:#ccc;text-decoration:none;} .sr-onlyshow a:hover{text-align:left;color:#fff;}.sr-onlyshow a::before{content:'\2630';display:inline-block;width:30px;height:auto;margin-left:-2px;color:#fff;}
 }
 *{text-decoration:none;}
 * html .clearfix {height:1%;}
@@ -70,14 +88,16 @@ ul.social,.social li{list-style:none;}
 </head>
 
 <body>
-
-<div class="cl-12 no clmenu">
+<div class="sr-onlyshow"><a href="javascript:void(0)" onclick="closeIt()">SHOW MENU</a></div>
+<div id="menu" class="cl-12 no clmenu">
 <ul>
+<li class="sr-only"><a href="javascript:void(0)" onclick="closeIt()">HIDE MENU</a></li>
 <li><a href="#about">About</a></li>
   <li><a href="#obs">OBS</a></li>
   <li><a href="#mfc">MyFreeCams Templates</a></li>
   <li><a href="#cb">Chaturbate Templates</a></li>
   <li><a href="#graphics">Graphics</a></li>
+  <li><a href="https://cssmfc.github.io/assets/source_editor.html" target="_blank">Source Editor <span>BETA</span></a></li>
   <li class="flright"><a class="active" href="javascript:void(0)" onclick="designedBy()" title="Author">About Author</a></li>
 </ul>
 </div>
@@ -102,9 +122,18 @@ ul.social,.social li{list-style:none;}
     </p>
         <p>OBS has become more and more popular among webcam performers and new necessities, new requirements popup like mushrooms after a rainy day.</p>
         <div class="cgc-12 tright btn">
-     <a href="https://github.com/cssmfc/obs/tree/master/obs_overlays" target="_blank" rel="noopener" title="OBS Overlays">OBS overlays on GitHub</a>
+     <a href="https://camgirl.cloud/support/forum/download/obs-overlays/" target="_blank" rel="noopener" title="OBS Overlays">OBS section on Camgirl.Cloud</a>
      </div>
-     </div>   
+     </div>  
+      
+     <div class="cgc-1">&nbsp;</div>
+       <div class="cgc-10 no round tcenter">
+       <div class="cgc-4 no obsbtn"><a href="https://github.com/cssmfc/obs" target="_blank" rel="noopener">OBS Project on GitHub</a></div>
+       <div class="cgc-4 no obsbtn"><a href="https://github.com/cssmfc/obs/tree/master/obs_overlays" target="_blank" rel="noopener">OBS Overlays</a></div>
+       <div class="cgc-4 no obsbtn"><a href="https://github.com/cssmfc/obs/releases" target="_blank" rel="noopener">All Releses</a></div>
+       </div>
+     <div class="cgc-1">&nbsp;</div>
+     
  </div> 
  
  
@@ -116,9 +145,18 @@ ul.social,.social li{list-style:none;}
         <p>Invest in your image and style-up your MyFreeCams profile page with a custom, ready to use MyFreeCams profile layout designed by professional web designers.<br/>
 We design, code and develop custom MyFreeCams profile designs, unique projects for models and studios. Fully editable, flexible, easy to install and edit profile designs for MyFreeCams.</p>
 <div class="cgc-12 tright btn">
-     <a href="https://camgirl.cloud/editor/?gallery=myfreecams" target="_blank" rel="noopener" title="MyFreeCams Templates">MFC Gallery</a>
+     <a href="https://camgirl.cloud/editor/?gallery=myfreecams" target="_blank" rel="noopener" title="MyFreeCams Templates">MFC Gallery on Camgirl.Cloud</a>
      </div>
      </div>   
+     
+     <div class="cgc-1">&nbsp;</div>
+       <div class="cgc-10 no round tcenter">
+       <div class="cgc-4 no mfcbtn"><a href="https://github.com/cssmfc/cssmfc.github.io/tree/master/demos/mfc" target="_blank" rel="noopener">MFC Project on GitHub</a></div>
+       <div class="cgc-4 no mfcbtn"><a href="https://cssmfc.github.io/demos/mfc/mfc_design01/images/assets/Demo.html" target="_blank" rel="noopener">MFC Design Demo</a></div>
+       <div class="cgc-4 no mfcbtn"><a href="https://cssmfc.github.io//demos/mfc/mfc_design01/" target="_blank" rel="noopener">MFC Demo's Documentation</a></div>
+       </div>
+     <div class="cgc-1">&nbsp;</div>
+     
  </div> 
  
  
@@ -129,9 +167,18 @@ We design, code and develop custom MyFreeCams profile designs, unique projects f
         <p>Want to make more tokens? Our Chaturbate Bio designs come with token-making widgets and custom sections. Take advantage of our experience and services.<br/>
 Image-based Chaturbate Bio layout or fully coded template with custom graphics, banners, buttons and money-making sections is what we do best for webcam performers and studio owners Chaturbate templates, designs, layouts and resources available on our service list.</p>
 <div class="cgc-12 tright btn">
-     <a href="https://camgirl.cloud/editor/?gallery=chaturbate" target="_blank" rel="noopener" title="Chaturbate Templates">CB Gallery</a>
+     <a href="https://camgirl.cloud/editor/?gallery=chaturbate" target="_blank" rel="noopener" title="Chaturbate Templates">CB Gallery on Camgirl.Cloud</a>
      </div>
-     </div>   
+     </div> 
+     
+     <div class="cgc-1">&nbsp;</div>
+       <div class="cgc-10 no round tcenter">
+       <div class="cgc-4 no cbbtn"><a href="https://github.com/cssmfc/cssmfc.github.io/tree/master/demos/cb" target="_blank" rel="noopener">CB Project on GitHub</a></div>
+       <div class="cgc-4 no cbbtn"><a href="https://cssmfc.github.io/demos/cb/cb_design01/" target="_blank" rel="noopener">CB Design Demo &amp; Documentation</a></div>
+       <div class="cgc-4 no cbbtn"><a href="https://cssmfc.github.io/assets/source_editor.html" target="_blank" rel="noopener">Source Editor</a></div>
+       </div>
+     <div class="cgc-1">&nbsp;</div>
+       
  </div>
   
   
@@ -142,12 +189,61 @@ Image-based Chaturbate Bio layout or fully coded template with custom graphics, 
         <p>Camgirl Cloud is happy to provide additional services from banner range and other visual marketing elements to more complex marketing materials and branding sets<br/>
 Eye-catchy graphics, animated images, appealing elements, call to action, and why stop here?!</p>
 <div class="cgc-12 tright btn">
-     <a href="https://camgirl.cloud/banners-inspiration/" target="_blank" rel="noopener" title="MyFreeCams Templates">Graphic Services</a>
+     <a href="https://camgirl.cloud/banners-inspiration/" target="_blank" rel="noopener" title="Graphic section">Graphic Services on Camgirl.Cloud</a>
      </div>
-     </div>   
+     </div>
+     
+     <div class="cgc-1">&nbsp;</div>
+       <div class="cgc-10 no round tcenter">
+       <div class="cgc-4 no psdbtn"><a href="https://github.com/cssmfc/cssmfc.github.io/tree/master/demos/psd" target="_blank" rel="noopener">Graphics Project on GitHub</a></div>
+       <div class="cgc-4 no psdbtn"><a href="https://camgirl.cloud/support/forum/download/psd-editable-designs-and-graphic-resources/" target="_blank" rel="noopener">PSD section on Camgirl.Cloud</a></div>
+       <div class="cgc-4 no psdbtn"><a href="https://www.deviantart.com/cgc-dan" target="_blank" rel="noopener">DeviantArt Dan</a></div>
+       </div>
+     <div class="cgc-1">&nbsp;</div>
+     
+        
  </div>
   
-  
+   <div id="team" class="cgc-12">
+ <div class="cgc-12 teamcontainer tcenter">
+ <h1>Camgirl.Cloud Team</h1>
+ <div class="cgc-12 led">
+      <p class="cgc-12 description"><strong>We value the independence and strength of our users and want to give them an environment in which they can thrive.</strong></p>
+    </p>
+        
+        <div class="cgc-4 tcenter theteam">
+          <div class="cgc-12 imgresp tcenter"><img src="https://raw.githubusercontent.com/cssmfc/cssmfc.github.io/master/assets/authordev.png" alt="Developer Raphaël"/></div>
+          <div class="cgc-12">
+          <p><strong>Developer</strong></p>
+<p>Raphaël - Web developer for years mainly in PHP and Javascript, freelancer, entrepreneur, judoka who also like nature, long walks and meditation.</p>
+          </div>
+        </div>
+        
+        <div class="cgc-4 tcenter theteam">
+          <div class="cgc-12 imgresp tcenter"><img src="https://raw.githubusercontent.com/cssmfc/cssmfc.github.io/master/credits/dan/author.png" alt="Webdesigner Dan N"/></div>
+          <div class="cgc-12">
+          <p><strong>Web Designer</strong></p>
+<p>Dan N - Back in 2007, for the first time I had the amazing opportunity to design and code custom projects for webcam performers. Since then, it become my daily job.</p>
+          </div>
+        </div>
+        
+        <div class="cgc-4 tcenter theteam">
+          <div class="cgc-12 imgresp tcenter"><img src="https://raw.githubusercontent.com/cssmfc/cssmfc.github.io/master/credits/dellany/author4.png" alt="Graphic Designer Dellany"/></div>
+          <div class="cgc-12">
+          <p><strong>Graphic Designer</strong></p>
+<p>Dellany Ella - Former camgirl with over 7 years of caming activity, now graphic designer, blogger, consultant, trainer and proud mom.</p>
+          </div>
+        </div>
+        
+        
+<div class="cgc-12 tcenter btn">
+     <a href="https://camgirl.cloud/dev/" target="_blank" rel="noopener" title="CGC Team">Camgirl Cloud Team</a>
+     </div>
+     </div>
+     
+     
+  </div>       
+ </div>
   
   
  <div class="cgc-12 no footer">
@@ -210,6 +306,14 @@ function designedBy() {
         x.style.display = "none";
     } else {
         x.style.display = "block";
+    }
+}
+function closeIt() {
+    var x = document.getElementById("menu");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
     }
 }
 </script>
