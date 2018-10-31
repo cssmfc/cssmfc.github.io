@@ -1,7 +1,7 @@
 # Demos and Resources
 *Welcome to Chaturbate Demos section*
 
-
+# Chaturbate Bio design LaviniaSky
 
 ### Index
 
@@ -12,18 +12,25 @@
 * [social network](README.md#links)
 
 
+[![CAMGIRL.CLOUD](https://i.imgur.com/ZUtLyYQ.png)](https://camgirl.cloud/)
 
 ### About
-This section is hosting free demos and resources currently available on [Dan's Vault](https://cssmfc.github.io/)
-* What you can do:
-  * download, edit, re-design
-  * present it as your work
-  * if a download comes with 3rd party license, you should not remove it (i.e. fonts license, credits for graphics... so on)
-  * host your own resources
+Custom Chaturbate bio design LaviniaSky by [Dan N](https://cssmfc.github.io/)
+* Custom available sections:
+ * Logo image – replace the default graphic with your own logo
+ * Header links – Twitter, Amazon Wishlist, Chaturbate Wishlist links – add your own links
+ * Custom full header image
+ * About Me area – 3 editable sections holding plain text, Model’s bio and Join Club
+ * Likes and Dislikes section listing 12 likes and dislikes for you to add
+ * Store section – 3+10 graphics with editable text and token amount available
+ * Full page banner
+ * Top Tippers section with 3 animated graphics and 3 listings showing 5 Premium Usernames each
+ * Spoil Me section – 3 generic gift cards graphics with buttons
+ * Floating icons – Twitter, Amazon, Instagram and micro banner for your Chaturbate affiliate program
 
-* What you can not do:
-  * sell it
-
+* Edit LaviniaSky online:
+  * [online editor](https://camgirl.cloud/template/?id=67705)
+  * [Youtube - Template preview](https://www.youtube.com/watch?v=poDhosv377s)
 
 ### Contact
 
