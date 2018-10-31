@@ -28,9 +28,11 @@ Custom Chaturbate bio design LaviniaSky by [Dan N](https://cssmfc.github.io/)
  * Spoil Me section – 3 generic gift cards graphics with buttons
  * Floating icons – Twitter, Amazon, Instagram and micro banner for your Chaturbate affiliate program
 
+
+
 * Edit LaviniaSky online:
   * [online editor](https://camgirl.cloud/template/?id=67705)
-  * [Youtube - Template preview](https://www.youtube.com/watch?v=poDhosv377s)
+
 
 ### Contact
 
