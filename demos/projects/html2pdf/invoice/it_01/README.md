@@ -22,8 +22,11 @@ The Invoice template is using HTML content based with editable areas. Simple to 
  
 
 **HTML to PDF:** browser based project
+
 **Source:** local/online
+
 **Coded:** HTML, CSS, UIKit framework
+
 **Resources:**  [UIKit](https://getuikit.com/)
 
 
