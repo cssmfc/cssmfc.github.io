@@ -12,7 +12,7 @@
 * [author note](README.md#author-note)
 * [social network](README.md#links)
 
-## :inbox_tray: [Download Source and full documentation](https://github.com/cssmfc/obs/releases/tag/v1.0.MTM)
+## :computer: [Online Demo](https://cssmfc.github.io/demos/projects/html2pdf/invoice/it_01/)
 
 ### About
 The Invoice template is using HTML content based with editable areas. Simple to use, no coding skills, no hosting. Type, upload and Save.
@@ -57,4 +57,4 @@ The Invoice template is using HTML content based with editable areas. Simple to 
 
 :link: CGC is active on social networks and other platforms:
 
-[Twitter](https://www.twitter.com/CSSMFC) | [Facebook Group](https://www.facebook.com/groups/xniteproductions/) | [YouTube](https://www.youtube.com/channel/UCbJQMNUNpK1Pt-uGyOq7iQw) | [Website](https://camgirl.cloud/) | [Reddit](https://www.reddit.com/r/CamgirlLiveEditor/) | :link: [My Profile](https://dan.camgirl.cloud/)
+[Twitter](https://www.twitter.com/CSSMFC) | [Facebook Group](https://www.facebook.com/groups/xniteproductions/) | [YouTube](https://www.youtube.com/channel/UCbJQMNUNpK1Pt-uGyOq7iQw) | [Website](https://camgirl.cloud/) | [Reddit](https://www.reddit.com/r/CamgirlLiveEditor/) | :cloud: [My Profile](https://dan.camgirl.cloud/)
