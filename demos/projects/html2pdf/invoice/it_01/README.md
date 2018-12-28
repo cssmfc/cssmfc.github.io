@@ -1,6 +1,6 @@
 # HTML to PDF - Simple Invoice template with custom logo
 
-![Cover](https://raw.githubusercontent.com/cssmfc/obs/master/obs_overlays/obs_my_tipmenu/how%20to%20use/assets/cover_obs_overlay_bar.jpg)
+![Cover](https://raw.githubusercontent.com/cssmfc/cssmfc.github.io/master/demos/projects/html2pdf/invoice/it_01/images/1thumb_editable_main.jpg)
 
 
 ### Index
