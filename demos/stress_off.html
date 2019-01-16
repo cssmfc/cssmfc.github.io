@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<style>
+html{scroll-behavior: smooth;}
+* {box-sizing: border-box;}
+a:link,a:visited{color:#09C;text-decoration:none;}
+a:hover {color:#F39;}
+body{width:80%;margin:0 auto;color:#555;font-family: Tahoma, Geneva, sans-serif;background-color:#fdfdfd;font-weight:normal;font-style:normal;font-size:16px;}
+.xcr::-webkit-scrollbar {width:8px;}.xcr::-webkit-scrollbar-track {-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.3);-webkit-border-radius:10px;border-radius:10px;}.xcr::-webkit-scrollbar-thumb {-webkit-border-radius:10px;border-radius:10px;background:#fb89ff;-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.5);}.xcr::-webkit-scrollbar-thumb:window-inactive {background:rgba(204,0,0,.4);border:1px solid #333;}.line::after {content: "";clear: both;display: inline-table;}[class*="gr-"] {float: left;padding: 15px;border: 0px solid red;}.gr-1 {width: 8.33%;}.gr-2 {width: 16.66%;}.gr-3 {width: 25%;}.gr-4 {width: 33.33%;}.gr-5 {width: 41.66%;}.gr-6 {width: 50%;}.gr-7 {width: 58.33%;}.gr-8 {width: 66.66%;}.gr-9 {width: 75%;}.gr-10 {width: 83.33%;}.gr-11 {width: 91.66%;}.gr-12 {width: 100%;}.no{padding:0;}.tleft {text-align:left;}.tright {text-align:right;}.tcenter {text-align:center;}.tfleft {float:left;}.tfright {float:right;}.imgresp img, img.imgresp{display:block;width:100%;height:auto;margin:0 auto;}.divider{opacity:0;}
+
+
+#main{margin:5% auto 3% auto;}
+#basket {height: 200px;border: 1px solid #aaaaaa;overflow:hidden;}.makeitbigger{padding:40px 0 25px;}
+.text-to-burn{height:240px;overflow:auto;margin:-40px auto 12px auto;background-color: rgba(255,255,204,1);-webkit-box-shadow:0 5px 9px #999;box-shadow:0 5px 9px #999;}
+.text-to-burn:focus{ outline:none;}
+.text-to-burn:before{content:'Drag to trash';display:block;background-color:#036;color:#fff;text-align:center;padding:7px 19px 8px;margin:-20px auto;position:absolute;right:32px;}
+
+/*** Customization ***/
+
+@media only screen and (max-width: 968px)
+{body{font-size:14px;color:#666;font-family:Verdana, Geneva, sans-serif;}[class*="gr-"]{width:100%;}}
+* html .line {height:1%;}
+</style>
+<script>
+function allowDrop(ev) {
+  ev.preventDefault();
+}
+
+function drag(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  ev.target.appendChild(document.getElementById(data));
+}
+
+$(document).ready(function(){
+  $("button").click(function(){
+    $("#drag1").animate({
+      height: 'toggle'
+    });
+  });
+});
+
+function myFunction() {
+  var x = document.getElementById("drag1");
+  x.remove(x.selectedIndex);
+}
+
+
+function myReload() {
+  location.reload();
+}
+</script>
+
+<title>Drag and drop</title>
+</head>
+<body>
+
+<div id="main" class="gr-12">
+
+<div id="basket" ondrop="drop(event)" ondragover="allowDrop(event)" class="gr-12 makeitbigger"></div>
+
+<div class="gr-12 tcenter"><button class="btn">Hide it for later</button> <button onclick="myFunction()">Destroy it for good</button> <button onclick="myReload()">Type a new one</button> </div>
+
+<div class="gr-12 text-to-burn" id="drag1" draggable="true" ondragstart="drag(event)" contenteditable="true" spellcheck="false"></div>
+
+
+</div>
+</body>
+</html>
+
