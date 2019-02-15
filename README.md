@@ -1,4 +1,4 @@
-[![CSSMFC.GITHUB.IO](https://cssmfc.github.io/)
+[CSSMFC.GITHUB.IO](https://cssmfc.github.io/)
 
 # cssmfc.github.io
 *Dan's Vault - custom resources and designs for camgirls, camboys and other web designers https://cssmfc.github.io/*
