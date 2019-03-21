@@ -1,0 +1,163 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Basic HTML buttons</title>
+<style>
+/*** For demo purpose only  ***/
+html{scroll-behavior: smooth;}
+a:link,a:visited{color:#09C;}a:hover {color:#F39;}body{width:80%;margin:0 auto;color:#555;font-family:sans-serif;background-color:#fff;font-weight:normal;font-style:normal;font-size:16px;background-image:url('https://2.bp.blogspot.com/-I4s3UWRaYzY/WbC5SfYf23I/AAAAAAAAGcw/KVWXz-p-EcEWNdwxOZY9A_5x1AtzErt2QCLcBGAs/s1600/main_bg2.jpg');background-repeat:no-repeat;background-size:cover;background-position:center;background-attachment:fixed;font-family:sans-serif;}.xcr::-webkit-scrollbar {width:8px;}.xcr::-webkit-scrollbar-track {-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.3);-webkit-border-radius:10px;border-radius:10px;}.xcr::-webkit-scrollbar-thumb {-webkit-border-radius:10px;border-radius:10px;background:#fb89ff;-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.5);}.xcr::-webkit-scrollbar-thumb:window-inactive {background:rgba(204,0,0,.4);border:1px solid #333;}* {box-sizing: border-box;}html{}* {box-sizing:border-box;}.line::after {content: "";clear: both;display: inline-table;}[class*="gr-"] {float: left;padding: 15px;border: 0px solid red;}.gr-1 {width: 8.33%;}.gr-2 {width: 16.66%;}.gr-3 {width: 25%;}.gr-4 {width: 33.33%;}.gr-5 {width: 41.66%;}.gr-6 {width: 50%;}.gr-7 {width: 58.33%;}.gr-8 {width: 66.66%;}.gr-9 {width: 75%;}.gr-10 {width: 83.33%;}.gr-11 {width: 91.66%;}.gr-12 {width: 100%;}.no{padding:0;}.tleft {text-align:left;}.tright {text-align:right;}.tcenter {text-align:center;}.tfleft {float:left;}.tfright {float:right;}.imgresp img, img.imgresp{display:block;width:100%;height:auto;margin:0 auto;}.divider{opacity:0;}/*** Customization ***/.goup a,.goup a:visited{display:block;width:30px;height:30px;margin:10px auto 12px auto;background-color:#909;-webkit-clip-path: polygon(50% 32%, 100% 61%, 100% 86%, 50% 56%, 0 86%, 0 62%);clip-path: polygon(50% 32%, 100% 61%, 100% 86%, 50% 56%, 0 86%, 0 62%);opacity:0.5;-webkit-transition:all .4s;transition:all .4s;}.goup a:hover{opacity:1;-webkit-transform:scale(1.1,1.1);transform:scale(1.1,1.1);}.footer-themed{background-color:#909;padding:5% 0 0;}
+.footer-themed h2,.footer-themed p{color:rgba(255,255,255,0.7);}.footer-themed a, .footer-themed a:visited{color:rgba(255,255,255,0.5);text-decoration:underline;}.footer-themed a:hover{color:#fff;}
+
+.section{margin:10px auto 19px auto;background-color:#fff;border:1px solid #ccc;color:#777;font-family:sans-serif;font-size:18px;}
+textarea{display:block;width:99%;margin:5px auto 3px auto; outline:none;height:130px;}
+
+code{background-color:#CFE7E7;padding-left:4px;padding-right:4px;}
+/*** End For demo purpose only  ***/
+
+
+/*** Codes which need to be installed on MFC to render hover effects for buttons ***/
+
+/*** Button one ***/
+a.btn{padding:6px 22px;background-color:#09F;color:#f1f1f1;text-decoration:none;text-align:center;}
+.btn:hover{background-color:#F69;color:#fff;}
+/*** End Button one ***/
+
+
+/*** Button two ***/
+a.btn2{padding:6px 22px;background-color:#09F;color:#f1f1f1;text-decoration:none;text-align:center;-webkit-border-radius:5px;border-radius:5px;-webkit-box-shadow:0 1px 3px #999;box-shadow:0 1px 3px #999;}
+.btn2:hover{background-color:#F69;color:#fff;-webkit-box-shadow:0 0px 3px #f1f1f1;box-shadow:0 0px 3px #f1f1f1;}
+/*** End Button two ***/
+
+/*** Reflect CSS ***/
+.reflect img{-webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(70%, transparent) , to(rgba(250, 250, 250, 0.1)));box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(70%, transparent) , to(rgba(250, 250, 250, 0.1)));-webkit-border-radius:5px;border-radius:5px;}
+
+/*** Ripple CSS ***/
+.ripple{position:relative;overflow:hidden;transform:translate3d(0,0,0)}.ripple:after{content:"";display:block;position:absolute;width:100%;height:100%;top:0;left:0;pointer-events:none;background-image:radial-gradient(circle,#000 10%,transparent 10.01%);background-repeat:no-repeat;background-position:50%;transform:scale(10,10);opacity:0;transition:transform .5s,opacity 1s}.ripple:active:after{transform:scale(0,0);opacity:.2;transition:0s}
+
+
+
+
+@media only screen and (max-width: 768px)
+{body{font-size:14px;color:#666;font-family:sans-serif;}[class*="gr-"]{width:100%;}h1,h2,h3,h4,h5,h6{font-size:20px;font-weight:lighter;}}
+</style>
+</head>
+
+<body>
+
+<div id="top" class="gr-12 section">
+<h1>Simple markup codes</h1>
+<p>this material is made for demo purpose &amp; compatible with MyFreeCams</p>
+
+</div>
+
+<div id="top" class="gr-12 section">
+<p>Simple, basic HTML clickable image (micro-banner or button)</p>
+<textarea spellcheck="false"><a href="https://camgirl.cloud/" target="_blank"><img src="https://d31rb55u3y3kjs.cloudfront.net/c/u/520476279851687b6dabcc7189410390/2019/03/17104217/logo.gif"/></a></textarea>
+<p>It will render this banner</p>
+<p><a href="https://camgirl.cloud/" target="_blank"><img src="https://d31rb55u3y3kjs.cloudfront.net/c/u/520476279851687b6dabcc7189410390/2019/03/17104217/logo.gif"/></a></p>
+</div>
+
+<div class="gr-12 section">
+<p>Styled link. No images used</p>
+<p>HTML markup<br/>
+<textarea spellcheck="false"><a class="btn" href="https://camgirl.cloud/" target="_blank">Button Name</a></textarea></p>
+<p>CSS markup<br/>
+<textarea spellcheck="false">a.btn{padding:6px 22px;background-color:#09F;color:#f1f1f1;text-decoration:none;text-align:center;}
+.btn:hover{background-color:#F69;color:#fff;}</textarea></p>
+<p>It will render this</p>
+<p><a class="btn" href="https://camgirl.cloud/" target="_blank">Button Name</a></p>
+</div>
+
+
+
+<div class="gr-12 section">
+<p>A bit more complex button</p>
+<p>HTML markup<br/>
+<textarea spellcheck="false"><a class="btn2" href="https://camgirl.cloud/" target="_blank">Button Name</a></textarea></p>
+<p>CSS markup<br/>
+<textarea spellcheck="false">a.btn2{padding:6px 22px;background-color:#09F;color:#f1f1f1;text-decoration:none;text-align:center;-webkit-border-radius:5px;border-radius:5px;-webkit-box-shadow:0 1px 3px #999;box-shadow:0 1px 3px #999;}
+.btn2:hover{background-color:#F69;color:#fff;-webkit-box-shadow:0 0px 3px #f1f1f1;box-shadow:0 0px 3px #f1f1f1;}</textarea></p>
+<p>It will render this</p>
+<p><a class="btn2" href="https://camgirl.cloud/" target="_blank">Button Name</a></p>
+</div>
+
+
+
+<div class="gr-12 section">
+<h2>Example using CSS reflect effect</h2>
+  
+  <div class="gr-7 imgresp tcenter">
+   <a class="reflect" href="https://camgirl.cloud/banners/"><img src="https://raw.githubusercontent.com/cssmfc/camgirl/master/hders_banners/image_editing.gif"/></a>
+  </div>
+  
+  <div class="gr-5">
+  <h4>Using CSS reflect effect to spice up image rendering</h4>
+  <p>HTML markup<br/>
+  <textarea spellcheck="false"><a class="reflect" href="https://camgirl.cloud/banners/"><img src="https://raw.githubusercontent.com/cssmfc/camgirl/master/hders_banners/image_editing.gif"/></a></textarea><br/> The <code>reflect</code> class is added to parent element which in this case is the link</p>
+  <p>CSS markup<br/>
+  <textarea spellcheck="false">.reflect img{-webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(70%, transparent) , to(rgba(250, 250, 250, 0.1)));box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(70%, transparent) , to(rgba(250, 250, 250, 0.1)));-webkit-border-radius:5px;border-radius:5px;}</textarea></p>
+  </div>
+  
+  
+</div>
+
+
+
+<div class="gr-12 section">
+<h2>Example using CSS ripple effect</h2>
+  
+  <div class="gr-7 imgresp tcenter">
+   <a class="ripple btn2" href="https://camgirl.cloud/banners/">Button Name</a>
+  </div>
+  
+  <div class="gr-5">
+  <h4>Using CSS ripple effect to spice up image rendering</h4>
+  <p>HTML markup<br/>
+  <textarea spellcheck="false"><a class="ripple btn2" href="https://camgirl.cloud/banners/">Button Name</a></textarea><br/> The <code>ripple</code> class is added to parent element which in this case is the link</p>
+  <p>CSS markup<br/>
+  <textarea spellcheck="false">.ripple{position:relative;overflow:hidden;transform:translate3d(0,0,0)}.ripple:after{content:"";display:block;position:absolute;width:100%;height:100%;top:0;left:0;pointer-events:none;background-image:radial-gradient(circle,#000 10%,transparent 10.01%);background-repeat:no-repeat;background-position:50%;transform:scale(10,10);opacity:0;transition:transform .5s,opacity 1s}.ripple:active:after{transform:scale(0,0);opacity:.2;transition:0s}</textarea></p>
+  </div>
+  
+  
+</div>
+
+
+
+<div class="gr-12 section">
+<h2>Info</h2>
+<p><strong>URL/LINK</strong>. Replace the <code>url</code> between double quotes with your related link (url) --- after <code>&lt;a href=&quot;</code></p>
+<p><strong>IMAGE</strong>. Replace the <code>url</code> between double quotes with your related link of your hosted image. The image must be oploaded online --- after <code>&lt;img src=&quot;</code></p>
+<p>To use more complex markup for showing buttons as showed above, both the CSS and the HTML codes must be installed on your MFC</p>
+<p>It's obvious that you will need to add your own link instead of the default one</p>
+</div>
+
+
+<div class="gr-12"><p>You may be interested in how to <a href="https://camgirl.cloud/support/topic/install-a-myfreecams-design/">install a custom MyFreeCams</a> profile design</p></div>
+
+
+<div class="gr-12 tcenter goup">
+<a href="#top"></a></div>
+
+<div id="customfooter" class="gr-12 footer-themed">
+
+    <div class="gr-12">
+    <div class="gr-6">
+    <h2>Camgirl.Cloud</h2>
+    <p><a href="https://camgirl.cloud/editor/">Camgirl Live Editor</a> is a professional tool which allow customization and editing of a wide range of templates from pre designed gallery without writing a single line of code.</p>
+  </div>
+  <div class="gr-6">
+  <h2>Online</h2>
+    <p><a href="https://twitter.com/CSSMFC">Follow on Twitter</a></p>
+    <p><a href="https://www.facebook.com/groups/camgirl.cloud/">Join Facebook Group</a></p>
+    <p><a href="https://camgirl.cloud/support/forum/templates-categories/myfreecams/how-to/">Support forum</a></p>
+    </div>
+  <div class="gr-12 tcenter credits">
+    <p> material by <a href="https://camgirl.cloud/profile/2/">Dan N</a></p>
+  </div>
+</div>
+</div>
+
+
+</body>
+</html>
