@@ -51,4 +51,4 @@ Both of them must be installed on MFC platform in order to render the full desig
 
 ***
 
-[Twitter](https://www.twitter.com/CSSMFC) | [Website](https://camgirl.cloud/) 
+[Twitter](https://www.twitter.com/CamgirlCloud) | [Website](https://camgirl.cloud/) 
