@@ -34,4 +34,4 @@
 
 ***
 
-[Twitter](https://www.twitter.com/CSSMFC) | [Website](https://camgirl.cloud/) |  :octocat: [on GitHub](https://cssmfc.github.io/)
+[Twitter](https://www.twitter.com/CamgirlCloud) | [Website](https://camgirl.cloud/) |  :octocat: [on GitHub](https://cssmfc.github.io/) |  [Discord Server](https://discord.gg/2XvqfsJ)
