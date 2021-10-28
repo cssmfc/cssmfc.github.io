@@ -15,6 +15,9 @@
  * Wiki
    * About
 
+This repo is no longer mentained and updated. If you have questions, suggestions or whatever...post on [discussions](https://github.com/cssmfc/cssmfc.github.io/discussions)
+Its time to start making money!
+
 
 
 
@@ -34,4 +37,4 @@
 
 ***
 
-[Twitter](https://www.twitter.com/CamgirlCloud) | [Website](https://camgirl.cloud/) |  :octocat: [on GitHub](https://cssmfc.github.io/) |  [Discord Server](https://discord.gg/2XvqfsJ)
+[Twitter](https://www.twitter.com/CamgirlCloud) 
